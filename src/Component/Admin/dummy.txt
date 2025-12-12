@@ -1,0 +1,111 @@
+// Login Page CSs
+
+.AdminDiv {
+  align-items: center;
+  width: 100%;
+}
+
+.AdminDivBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo-image {
+  width: 8%;
+}
+
+.companyText {
+  width: 90%;
+  padding: 0px 20px;
+}
+
+.psychortexHead {
+  display: inline-block;
+  font-size: 2em;
+  background: linear-gradient(90deg, rgb(116, 1, 116), rgb(149, 193, 3));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.adminLogin-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  font-family: Arial, sans-serif;
+}
+
+.adminLogin-form-container {
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.adminLogin-h1 {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: rgb(116, 1, 116);
+}
+
+.adminLogin-input-group {
+  margin-bottom: 15px;
+}
+
+.adminLogin-label {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(99, 99, 99);
+}
+
+.adminLogin-input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.adminLogin-error {
+  color: red;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.adminLogin-button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(149, 193, 3);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.adminLogin-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Footer CSS */
+
+.AdminLoginPageFooter {
+  background-color: #f8f9fa; /* Light grey background */
+  padding: 20px 0px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #e7e7e7; /* Optional: adds a top border */
+}
+
+.AdminLoginPageFooter-p {
+  margin: 0;
+  color: #6c757d; /* Dark grey text */
+}

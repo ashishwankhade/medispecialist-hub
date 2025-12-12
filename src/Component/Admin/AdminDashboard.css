@@ -1,0 +1,218 @@
+.dashboard-container {
+  padding: 24px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.dashboard-header {
+  margin-bottom: 32px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hospital-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hospital-info h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.hospital-info p {
+  margin: 4px 0 0;
+  color: #666;
+}
+
+/* Stats Cards Styles */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+
+.stat-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-content h2 {
+  font-size: 32px;
+  margin: 0;
+  color: white;
+}
+
+.stat-content p {
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.stat-icon {
+  width: 40px;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.appointments {
+  background-color: #1573b3;
+}
+
+.doctors {
+  background-color: #c58700;
+}
+
+.completed {
+  background-color: #3a3a3a;
+}
+
+/* Appointments Section Styles */
+.appointments-section {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.appointments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.appointments-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 20px;
+}
+
+.header-icon {
+  width: 20px;
+  height: 20px;
+  color: #666;
+}
+
+.no-appointments {
+  text-align: center;
+  color: #666;
+  padding: 24px;
+}
+
+/* Table Styles */
+.table-container {
+  overflow-x: auto;
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.appointments-table th {
+  background-color: #f5f5f5;
+  padding: 12px 16px;
+  text-align: left;
+  color: #666;
+  font-weight: 600;
+}
+
+.appointments-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.appointments-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.view-button {
+  background-color: rgb(116, 1, 116);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.view-button:hover {
+  background-color: rgb(149, 193, 3);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .hide-tablet {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 16px;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .hospital-info h1 {
+    font-size: 20px;
+  }
+
+  .stat-content h2 {
+    font-size: 24px;
+  }
+
+  .appointments-table {
+    font-size: 14px;
+  }
+
+  .appointments-table td,
+  .appointments-table th {
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hospital-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .stat-card {
+    padding: 16px;
+  }
+
+  .appointments-section {
+    padding: 16px;
+  }
+}
