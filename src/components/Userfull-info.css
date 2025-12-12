@@ -1,0 +1,300 @@
+.userFullInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.patient-full-info-body{
+  width: 60%;
+  padding: 2rem 2rem;
+  background-color: rgba(212, 212, 212, 0.356);
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.289);
+}
+
+.info-body-subDiv{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.diagnosticForm-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+/* .diagnosticBtn{
+  background-color: rgb(116, 1, 116);
+  color: rgb(149, 193, 3);
+  padding: 8px 1.7rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: 0.1rem solid rgb(149, 193, 3);
+  border-radius: 10px;
+  transition: all ease 0.2s;
+}
+
+.diagnosticBtn:hover{
+  transform: scale(1.01);
+  cursor: pointer;
+  color: rgb(116, 1, 116);
+  background-color: rgb(149, 193, 3);
+  border: 1px solid rgb(116, 1, 116);
+} */
+
+
+
+
+/* Diagnostic Form */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+
+.form-container {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 0;
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  /* background-color: rgba(201, 201, 201, 0.11); */
+}
+.PDF-h1 {
+  color: rgb(116, 1, 116);
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding-bottom: 30px;
+  padding-top: 1px;
+  margin: 0px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-group textarea {
+  resize: vertical;
+}
+
+.Medical-info{
+  padding-top: 30px;
+  padding-bottom: 25px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.symptoms-details{
+    padding-top: 30px;
+    padding-bottom: 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.landH-details{
+  padding-top: 30px;
+  padding-bottom: 25px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+.submit-and-reset-btn {
+  text-align: center;
+}
+.submit-and-reset-btn button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+.submit-and-reset-btn button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+}
+.submit-and-reset-btn button[type="reset"] {
+  background-color: #f44336;
+  color: white;
+}
+
+@media (max-width:500px) {
+  .form-container {
+    padding: 10px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+  }
+
+  .PDF-h1 {
+    padding-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width:527px) {
+  .PDF-h1 {
+    color: rgb(116, 1, 116);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 30px;
+    padding-top: 1px;
+  }
+}
+
+/* For Border Color */
+
+.form-group #fullName {
+  /* border: 2px solid #ccc; */
+}
+.form-group #fullName:focus {
+  border-color: rgb(149, 193, 3); /* Change border color when input is focused */
+  outline: none; /* Remove default focus outline */
+}
+
+.form-group #dob {
+  border: 2px solid #ccc;
+}
+.form-group #dob:focus {
+  border-color: rgb(149, 193, 3); /* Change border color when input is focused */
+  outline: none; /* Remove default focus outline */
+}
+
+.form-group #gender {
+  border: 2px solid #ccc;
+}
+.form-group #gender:focus {
+  border-color: rgb(149, 193, 3); /* Change border color when input is focused */
+  outline: none; /* Remove default focus outline */
+}
+
+.form-group #contactNumber {
+  border: 2px solid #ccc;
+}
+.form-group #contactNumber:focus {
+  border-color: rgb(149, 193, 3); /* Change border color when input is focused */
+  outline: none; /* Remove default focus outline */
+}
+
+.form-group #email {
+  border: 2px solid #ccc;
+}
+.form-group #email:focus {
+  border-color: rgb(149, 193, 3); /* Change border color when input is focused */
+  outline: none; /* Remove default focus outline */
+}
+
+.form-group #existingConditions {
+  border: 2px solid #ccc;
+}
+.form-group #existingConditions:focus {
+  border-color: rgb(149, 193, 3); /* Change border color when input is focused */
+  outline: none; /* Remove default focus outline */
+}
+
+.form-group #medications {
+  border: 2px solid #ccc;
+}
+.form-group #medications:focus {
+  border-color: rgb(149, 193, 3); /* Change border color when input is focused */
+  outline: none; /* Remove default focus outline */
+}
+
+.form-group #allergies {
+  border: 2px solid #ccc;
+}
+.form-group #allergies:focus {
+  border-color: rgb(149, 193, 3); /* Change border color when input is focused */
+  outline: none; /* Remove default focus outline */
+}
+
+.form-group #symptoms {
+  border: 2px solid #ccc;
+}
+.form-group #symptoms:focus {
+  border-color: rgb(149, 193, 3); /* Change border color when input is focused */
+  outline: none; /* Remove default focus outline */
+}
+
+.form-group #symptomsDuration {
+  border: 2px solid #ccc;
+}
+.form-group #symptomsDuration:focus {
+  border-color: rgb(149, 193, 3); /* Change border color when input is focused */
+  outline: none; /* Remove default focus outline */
+}
+
+.form-group #smoking {
+  border: 2px solid #ccc;
+}
+.form-group #smoking:focus {
+  border-color: rgb(149, 193, 3); /* Change border color when input is focused */
+  outline: none; /* Remove default focus outline */
+}
+
+.form-group #alcohol {
+  border: 2px solid #ccc;
+}
+.form-group #alcohol:focus {
+  border-color: rgb(149, 193, 3); /* Change border color when input is focused */
+  outline: none; /* Remove default focus outline */
+}
+
+.form-group #exercise {
+  border: 2px solid #ccc;
+}
+.form-group #exercise:focus {
+  border-color: rgb(149, 193, 3); /* Change border color when input is focused */
+  outline: none; /* Remove default focus outline */
+}
+
+.form-group #emergencyContact {
+  border: 2px solid #ccc;
+}
+.form-group #emergencyContact:focus {
+  border-color: rgb(149, 193, 3); /* Change border color when input is focused */
+  outline: none; /* Remove default focus outline */
+}
+
+.form-group #emergencyContactNumber {
+  border: 2px solid #ccc;
+}
+.form-group #emergencyContactNumber:focus {
+  border-color: rgb(149, 193, 3); /* Change border color when input is focused */
+  outline: none; /* Remove default focus outline */
+}
+
+
+
+

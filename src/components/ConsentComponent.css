@@ -1,0 +1,75 @@
+/* Overlay for the popup */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+/* Styles for the consent form */
+.consentForm {
+  background: white;
+  padding: 20px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Adjust width as needed */
+  max-width: 600px; /* Maximum width for larger screens */
+  position: relative; /* Positioning context for closing button */
+}
+
+/* Additional styles for body text */
+.consentForm-body {
+  max-height: 80vh; /* Limit height for scrolling */
+  overflow-y: auto; /* Scroll if content is too long */
+  margin: 0px;
+}
+
+.consentForm-ranaLogoDiv {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: rgb(174, 205, 232);
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.consentForm-ranaLogo {
+  width: 17%;
+  border-radius: 50%;
+}
+
+.consentForm-ranaHeading {
+  /* text-align: center; */
+  padding-left: 67px;
+  color: rgb(15, 15, 124);
+}
+
+.consentForm-h1 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.consentForm-h3 {
+  text-align: center;
+}
+
+/* Button styles */
+.concern-btn {
+  background-color: #4caf50; /* Green background */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.concern-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

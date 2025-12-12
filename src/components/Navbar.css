@@ -1,0 +1,150 @@
+.homepage {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  z-index: 5;
+  opacity: 5;
+}
+
+.navbarDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  /* background-color: #0e0c0c; */
+  z-index: 5;
+  opacity: 5;
+}
+
+.navbar {
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* gap: 4rem; */
+  align-items: center;
+  padding: 0px;
+  /* background-color:  rgb(54,29,54 ); */
+}
+
+.nav-3btn {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 600;
+  color: var(--text-light);
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(197, 135, 0, 0.3);
+}
+
+.nav-btn-p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 600;
+}
+
+.modal-body{
+  z-index: 5;
+  opacity: 5;
+}
+
+.model-h1 {
+  color: rgb(116, 1, 116);
+}
+
+.modelForm-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 30px;
+}
+
+.modal-btn-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* margin:50px; */
+}
+
+.modal-btn {
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-weight: 900;
+  font-size: large;
+  /* color: black; */
+  background-color:  #1573b3;
+  color: white;
+}
+
+.modal-btn:hover{
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-weight: 900;
+  font-size: larger;
+  /* color: black; */
+  background-color:  #1573b3;
+  color: white;
+}
+
+
+.modal-h1{
+  padding: .5rem;
+  border-radius: 3px;
+  background-color:  #1573b3;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+
+.modalForm-name{
+  margin-top: 10px;
+  align-items: center;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modalForm-name label{
+  /* margin-top: 30px; */
+  padding: 20px;
+  align-items: center;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(197, 135, 0);
+  font-size: large;
+
+}
+
+
+.ModelInput{
+  z-index: 1;
+  border: 3px solid black !important;
+}
+
+.inputbox{
+  margin-top: 20px;
+  z-index: 1;
+
+}

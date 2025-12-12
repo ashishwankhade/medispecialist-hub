@@ -1,0 +1,108 @@
+/* Overlay for the popup */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+/* Styles for the consent form */
+.consentForm {
+  padding: 5px 0px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Adjust width as needed */
+  max-width: 600px; /*Maximum width for larger screens */
+  position: relative; /* Positioning context for closing button */
+}
+
+/* Additional styles for body text */
+.consentForm-body {
+  max-height: 80vh; /* Limit height for scrolling */
+  overflow-y: auto; /* Scroll if content is too long */
+}
+
+/* ConcernForm css */
+
+.consentForm-body {
+  width: 100%;
+  background-color: rgb(255, 252, 252);
+  color: black;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.consentForm-h1 {
+  color: rgb(116, 1, 116);
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+.consentForm-h3 {
+  padding-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.consentForm-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0px 1.3rem;
+}
+
+.consentForm-p {
+  padding-top: 12px;
+  padding-bottom: 3px;
+}
+
+#consentForm-p {
+  font-size: 1rem;
+  font-weight: 700;
+  padding-top: 12px;
+  padding-bottom: 3px;
+}
+
+.consentForm-p span {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.concern-btn-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-top: 25px;
+}
+
+.concern-btn {
+  color: rgb(116, 1, 116);
+  background-color: rgb(149, 193, 3);
+  font-size: 1rem;
+  font-weight: bold;
+  /* line-height: 1.5rem; */
+  padding: 3px 15px;
+  border: 1px solid rgb(116, 1, 116);
+  border-radius: 10px;
+  transition: all ease 0.3s;
+}
+
+.concern-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: rgb(116, 1, 116);
+  color: rgb(149, 193, 3);
+}

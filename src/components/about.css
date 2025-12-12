@@ -1,0 +1,281 @@
+.about-page {
+  width: 100%;
+}
+
+.about-us {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0px;
+  color: rgb(109, 2, 109);
+}
+
+.aboutUs-heading {
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-align: center;
+  color: rgb(137, 166, 41);
+}
+
+.about1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5rem;
+}
+
+.about-left {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-right: 3rem;
+}
+
+.about-head-para {
+  font-size: 1.5rem;
+  font-weight: 100;
+  width: 70%;
+  padding-top: 2rem;
+}
+
+.about-right {
+  width: 50%;
+  /* align-items: center; */
+  text-align: start;
+}
+
+.about-right img {
+  width: 60%;
+  border-radius: 10px;
+  margin-left: 5rem;
+}
+
+@media (max-width: 1200px) {
+  .about-left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 0rem;
+  }
+
+  .about-head-para {
+    font-size: 1.5rem;
+    font-weight: 100;
+    width: 80%;
+    padding-top: 0rem;
+  }
+
+  .about-right {
+    width: 50%;
+    /* align-items: center; */
+    text-align: start;
+  }
+
+  .about-right img {
+    width: 70%;
+    border-radius: 10px;
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-head-para {
+    font-size: 1.5rem;
+    font-weight: 100;
+    width: 83%;
+    padding-top: 0rem;
+  }
+
+  .about-right {
+    width: 50%;
+    /* align-items: center; */
+    text-align: start;
+  }
+
+  .about-right img {
+    width: 80%;
+    border-radius: 10px;
+    margin-left: 1rem;
+  }
+}
+
+/* About 2 */
+
+.about2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5rem;
+}
+
+.about2-left {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.about2-left img {
+  width: 60%;
+  border-radius: 10px;
+  margin-right: 5rem;
+}
+
+.about2-right {
+  width: 50%;
+  /* align-items: center; */
+  text-align: start;
+}
+
+.about2-head-para {
+  font-size: 1.5rem;
+  font-weight: 100;
+  width: 70%;
+  padding-top: 1rem;
+  padding-left: 4rem;
+}
+
+@media (max-width:1200px) {
+  .about2-left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  
+  .about2-left img {
+    width: 70%;
+    border-radius: 10px;
+    margin-right: 3rem;
+  }
+  
+  .about2-right {
+    width: 50%;
+    /* align-items: center; */
+    text-align: start;
+  }
+  
+  .about2-head-para {
+    font-size: 1.5rem;
+    font-weight: 100;
+    width: 85%;
+    padding-top: 0rem;
+    padding-left: 0rem;
+  }
+}
+
+/* About 3 */
+.about3-head-para {
+  font-size: 1.5rem;
+  font-weight: 100;
+  width: 70%;
+  padding-top: 6rem;
+}
+
+.about3-img {
+  width: 60%;
+  border-radius: 10px;
+  margin-left: 5rem;
+}
+
+@media (max-width:1200px) {
+  .about3-head-para {
+    font-size: 1.5rem;
+    font-weight: 100;
+    width: 80%;
+    padding-top: 3rem;
+  }
+  
+  .about3-img {
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width:850px) {
+  .about3-head-para {
+    font-size: 1.5rem;
+    font-weight: 100;
+    width: 80%;
+    padding-top: 0rem;
+  }
+}
+
+/* About 5 */
+
+.about5 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 5rem 0px;
+}
+
+.about5-head-para {
+  font-size: 1.5rem;
+  font-weight: 100;
+  width: 70%;
+  padding-top: 5rem;
+}
+
+.about5-right {
+  width: 50%;
+  /* align-items: center; */
+  text-align: start;
+}
+
+.about5-right img {
+  width: 50%;
+  border-radius: 10px;
+  margin-left: 8rem;
+}
+
+
+@media (max-width:1200px) {
+  .about5-head-para {
+    font-size: 1.5rem;
+    font-weight: 100;
+    width: 70%;
+    padding-top: 1rem;
+  }
+  
+  .about5-right img {
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 8rem;
+  }
+}
+
+
+@media (max-width:1024px) {
+  .about5-head-para {
+    font-size: 1.5rem;
+    font-weight: 100;
+    width: 80%;
+    padding-top: 1rem;
+  }
+  
+  .about5-right img {
+    width: 60%;
+    border-radius: 10px;
+    margin-left: 4rem;
+  }
+}
+
+@media (max-width:900px) {
+  .about5-head-para {
+    font-size: 1.5rem;
+    font-weight: 100;
+    width: 80%;
+    padding-top: 1rem;
+  }
+  
+  .about5-right img {
+    width: 60%;
+    border-radius: 10px;
+    margin-left: 4rem;
+  }
+}

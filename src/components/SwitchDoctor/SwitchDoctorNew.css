@@ -1,0 +1,228 @@
+.userReschedule {
+    margin-top: 30px;
+    color: rgb(116, 1, 116);
+  }
+  
+  .reschedule-userDetail {
+    margin-top: 20px;
+    /* background-color: red; */
+  }
+  
+  .userReschedule-h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(116, 1, 116);
+  }
+  
+  .reschedule-userDetail {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;*/
+    /* background-color: red;  */
+    /* border-style: none; */
+  }
+  
+  .reschedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 8px; */
+  }
+  
+  .reschedule-grid-item {
+    display: flex;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    align-items: start;
+  }
+  
+  .reschedule-grid-item-p {
+    /* font-size: 14px;
+    color: #666; */
+    align-self: flex-end;
+    font-weight: bold;
+  }
+  
+  .reschedule-grid-item-h3 {
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .bookSlots-div {
+    color: #565656;
+    font-weight: 500;
+    margin-top: 10px;
+    padding-left: 10px;
+    background-color: white;
+    /* grid-column: span 2; */
+  }
+  
+  .available {
+    /* background-color: red !important; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: yellow; */
+  }
+  
+  .availability-p2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .Date-Days {
+    display: flex;
+    gap: 10px;
+    /* overflow-x: auto; */
+    padding: 10px 0;
+  }
+
+  .Date-Days {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+  .Date-Days::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+  
+  .borderDayDAtes {
+    padding: 20px 10px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .borderDayDAte2s {
+    border: 0px solid black;
+    color: white;
+    background-color: rgb(149, 193, 3);
+  }
+  
+  .borderDayDAte3s {
+    border-color: #ccc;
+  }
+  
+  
+  @media (max-width:480px) {
+  
+    .Date-Days {
+      display: flex;
+      gap: 5px;
+      overflow-x: auto;
+      padding: 0px;
+    }
+  
+    .borderDayDAtes {
+      padding: 10px 5px;
+      border: 1px solid #ccc;
+      border-radius: 40px;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+  
+  .slotTime-div {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  
+  .slotTime-div {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+  .slotTime-div::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+
+
+  
+  .condition1 {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .condition2 {
+    border-color: #007bff;
+    background-color: #e7f0fe;
+  }
+  
+  .condition3 {
+    border-color: #ccc;
+  }
+  
+  .reshedule-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .reshedule-btn-p {
+    padding: 10px 20px;
+    background-color: rgb(149, 193, 3);
+    color: rgb(116, 1, 116);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .cancel-btn-p:hover {
+    color: rgb(116, 1, 116);
+  }
+  
+  .reschedule-doctor-container-above {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  
+  @media (max-width:660px) {
+    .reschedule-doctor-container-above {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      width: 100%;
+      margin: 0px auto;
+    }
+  
+    .reschedule-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 5px;
+      /* border: 1px solid #ccc; */
+      /* border-radius: 8px; */
+    }
+  }
+
+  .Dates-Days{
+    /* background-color: red; */
+    display: flex;
+    width: 100%;
+    /* overflow: hidden; */
+  }

@@ -1,0 +1,597 @@
+{/* <div className="availability">
+                <p className="availability-p">Availability</p>
+                <div className="date-avail">
+                  <div className="date1">
+                    <p className="date-p1">Mon</p>
+                    <p className="date-p1">29</p>
+                  </div>
+                  <div className="date1" >
+                    <p className="date-p1">Tue</p>
+                    <p className="date-p1">30</p>
+                  </div>
+                  <div className="date1">
+                    <p className="date-p1">Wed</p>
+                    <p className="date-p1">01</p>
+                  </div>
+                  <div className="date1">
+                    <p className="date-p1">Thu</p>
+                    <p className="date-p1">02</p>
+                  </div>
+                  <div className="date1" id="day-fri">
+                    <p className="date-p1">Fri</p>
+                    <p className="date-p1">03</p>
+                  </div>
+                  <div className="date1">
+                    <p className="date-p1">Sat</p>
+                    <p className="date-p1">04</p>
+                  </div>
+                </div>
+
+                <div className="time-avail">
+                  <div className="time1">
+                    <p className="time-p1">10:00</p>
+                  </div>
+                  <div className="time1">
+                    <p className="time-p1">11:00</p>
+                  </div>
+                  <div className="time1">
+                    <p className="time-p1">12:00</p>
+                  </div>
+                  <div className="time1">
+                    <p className="time-p1">01:00</p>
+                  </div>
+                  <div className="time1">
+                    <p className="time-p1">02:00</p>
+                  </div>
+                  <div className="time1">
+                    <p className="time-p1">03:00</p>
+                  </div>
+                </div>
+              </div> */}
+
+              {/* <div className="button-div">
+                <div className="book-btn" onClick={() => {
+                  handleClick(drData._id)
+                }}>
+                  Book Appointment
+                </div>
+              </div> */}
+
+
+
+
+
+
+
+
+              {/* <div className="doctor1">
+          <div className="dr-img">
+            <img className="doctor-img" src={dr11} alt="" />
+          </div>
+
+          <div className="name-specification">
+            <h3 className="doctor-name">Shreya Thakar</h3>
+            <p className="dr-specification">Counsling & Sport Psychologist</p>
+          </div>
+
+          <div className="availability">
+            <p className="availability-p">Availability</p>
+
+            <div className="date-avail">
+              <div className="date1">
+                <p className="date-p1">Mon</p>
+                <p className="date-p1">29</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Tue</p>
+                <p className="date-p1">30</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Wed</p>
+                <p className="date-p1">01</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Thu</p>
+                <p className="date-p1">02</p>
+              </div>
+              <div className="date1" id="day-fri">
+                <p className="date-p1">Fri</p>
+                <p className="date-p1">03</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Sat</p>
+                <p className="date-p1">04</p>
+              </div>
+            </div>
+
+            <div className="time-avail">
+              <div className="time1">
+                <p className="time-p1">10:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">11:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">12:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">01:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">02:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">03:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="button-div">
+            <div className="book-btn" onClick={handleClick}>
+              Book Appointment
+            </div>
+          </div>
+        </div>
+
+        <div className="doctor1">
+          <div className="dr-img">
+            <img className="doctor-img" src={dr2} alt="" />
+          </div>
+
+          <div className="name-specification">
+            <h3 className="doctor-name">Shweta Patkar Garge</h3>
+            <p className="dr-specification">Psychological Counselor</p>
+          </div>
+
+          <div className="availability">
+            <p className="availability-p">Availability</p>
+            <div className="date-avail">
+              <div className="date1">
+                <p className="date-p1">Mon</p>
+                <p className="date-p1">29</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Tue</p>
+                <p className="date-p1">30</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Wed</p>
+                <p className="date-p1">01</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Thu</p>
+                <p className="date-p1">02</p>
+              </div>
+              <div className="date1" id="day-fri">
+                <p className="date-p1">Fri</p>
+                <p className="date-p1">03</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Sat</p>
+                <p className="date-p1">04</p>
+              </div>
+            </div>
+
+            <div className="time-avail">
+              <div className="time1">
+                <p className="time-p1">10:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">11:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">12:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">01:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">02:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">03:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="button-div">
+            <div className="book-btn" onClick={handleClick}>
+              Book Appointment
+            </div>
+          </div>
+        </div>
+
+        <div className="doctor1">
+          <div className="dr-img">
+            <img className="doctor-img" src={dr33} alt="" />
+          </div>
+          <div className="name-specification">
+            <h3 className="doctor-name">Ashwini Darade</h3>
+            <p className="dr-specification">Clinical Psychologist</p>
+          </div>
+
+          <div className="availability">
+            <p className="availability-p">Availability</p>
+            <div className="date-avail">
+              <div className="date1">
+                <p className="date-p1">Mon</p>
+                <p className="date-p1">29</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Tue</p>
+                <p className="date-p1">30</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Wed</p>
+                <p className="date-p1">01</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Thu</p>
+                <p className="date-p1">02</p>
+              </div>
+              <div className="date1" id="day-fri">
+                <p className="date-p1">Fri</p>
+                <p className="date-p1">03</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Sat</p>
+                <p className="date-p1">04</p>
+              </div>
+            </div>
+
+            <div className="time-avail">
+              <div className="time1">
+                <p className="time-p1">10:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">11:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">12:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">01:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">02:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">03:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="button-div">
+            <div className="book-btn" onClick={handleClick}>
+              Book Appointment
+            </div>
+          </div>
+        </div>
+
+        <div className="doctor1">
+          <div className="dr-img">
+            <img className="doctor-img" src={dr4} alt="" />
+          </div>
+
+          <div className="name-specification">
+            <h3 className="doctor-name">Rashika Ghate</h3>
+            <p className="dr-specification">
+              Psychologist,Graphologist & Dream Analyst
+            </p>
+          </div>
+
+          <div className="availability">
+            <p className="availability-p">Availability</p>
+            <div className="date-avail">
+              <div className="date1">
+                <p className="date-p1">Mon</p>
+                <p className="date-p1">29</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Tue</p>
+                <p className="date-p1">30</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Wed</p>
+                <p className="date-p1">01</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Thu</p>
+                <p className="date-p1">02</p>
+              </div>
+              <div className="date1" id="day-fri">
+                <p className="date-p1">Fri</p>
+                <p className="date-p1">03</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Sat</p>
+                <p className="date-p1">04</p>
+              </div>
+            </div>
+
+            <div className="time-avail">
+              <div className="time1">
+                <p className="time-p1">10:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">11:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">12:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">01:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">02:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">03:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="button-div">
+            <div className="book-btn" onClick={handleClick}>
+              Book Appointment
+            </div>
+          </div>
+        </div>
+
+        <div className="doctor1">
+          <div className="dr-img">
+            <img className="doctor-img" src={dr5} alt="" />
+          </div>
+          <div className="name-specification">
+            <h3 className="doctor-name">Tanyashree Jamuda</h3>
+            <p className="dr-specification">Psychologist</p>
+          </div>
+
+          <div className="availability">
+            <p className="availability-p">Availability</p>
+            <div className="date-avail">
+              <div className="date1">
+                <p className="date-p1">Mon</p>
+                <p className="date-p1">29</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Tue</p>
+                <p className="date-p1">30</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Wed</p>
+                <p className="date-p1">01</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Thu</p>
+                <p className="date-p1">02</p>
+              </div>
+              <div className="date1" id="day-fri">
+                <p className="date-p1">Fri</p>
+                <p className="date-p1">03</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Sat</p>
+                <p className="date-p1">04</p>
+              </div>
+            </div>
+
+            <div className="time-avail">
+              <div className="time1">
+                <p className="time-p1">10:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">11:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">12:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">01:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">02:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">03:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="button-div">
+            <div className="book-btn" onClick={handleClick}>
+              Book Appointment
+            </div>
+          </div>
+        </div>
+
+        <div className="doctor1">
+          <div className="dr-img">
+            <img className="doctor-img" src={Doctor} alt="" />
+          </div>
+          <div className="name-specification">
+            <h3 className="doctor-name">Dr. Sharma</h3>
+            <p className="dr-specification">Mental Sergion</p>
+          </div>
+
+          <div className="availability">
+            <p className="availability-p">Availability</p>
+            <div className="date-avail">
+              <div className="date1">
+                <p className="date-p1">Mon</p>
+                <p className="date-p1">29</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Tue</p>
+                <p className="date-p1">30</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Wed</p>
+                <p className="date-p1">01</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Thu</p>
+                <p className="date-p1">02</p>
+              </div>
+              <div className="date1" id="day-fri">
+                <p className="date-p1">Fri</p>
+                <p className="date-p1">03</p>
+              </div>
+              <div className="date1">
+                <p className="date-p1">Sat</p>
+                <p className="date-p1">04</p>
+              </div>
+            </div>
+
+            <div className="time-avail">
+              <div className="time1">
+                <p className="time-p1">10:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">11:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">12:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">01:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">02:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">03:00</p>
+              </div>
+
+              <div className="time1">
+                <p className="time-p1">02:00</p>
+              </div>
+              <div className="time1">
+                <p className="time-p1">03:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="button-div">
+            <div className="book-btn" onClick={handleClick}>
+              Book Appointment
+            </div>
+          </div>
+        </div>  */}
+
+
+        <div className="form-row">
+          <div className="dr-speciality">
+            <label htmlFor="">Your Booked Date</label>
+            <div className="auto-dr-name"></div>
+          </div>
+
+          <div className="dr-speciality">
+            <label htmlFor="">Your Booked Time</label>
+            <div className="auto-dr-name"></div>
+          </div>
+        </div>
+
+
+
+
+                        {/* <div className="date-day">
+                  {docSlots.length &&
+                    docSlots.map((item, index) => (
+                      <div
+                        className="borderDayDAte"
+                        onClick={() => setSlotIndex(index)}
+                      >
+                        <p>
+                          {item[0] && daysOfWeek[item[0].datetime.getDay()]}
+                        </p>
+                        <p>{item[0] && item[0].datetime.getDate()}</p>
+                      </div>
+                    ))}
+                </div>
+
+                <div className="slotTime-div">
+                  {docSlots.length &&
+                    docSlots[slotIndex].map((item, index) => (
+                      <p
+                        onClick={() => setSlotTime(item.time)}
+                        key={index}
+                        className={`'condition1' ${
+                          item.time === slotTime ? "condition2" : "condition3"
+                        }`}
+                      >
+                        {item.time.toLowerCase()}
+                      </p>
+                    ))}
+                </div> */}
+
+
+
+// After 98 line no
+
+
+                 // const getAvailableSolts = async () => {
+  //   setDocSlots([]);
+
+  //   // getting current date
+  //   let today = new Date();
+
+  //   for (let i = 0; i < 7; i++) {
+  //     // getting date with index
+  //     let currentDate = new Date(today);
+  //     currentDate.setDate(today.getDate() + i);
+
+  //     // setting end time of the date with index
+  //     let endTime = new Date();
+  //     endTime.setDate(today.getDate() + i);
+  //     endTime.setHours(21, 0, 0);
+
+  //     // setting hours
+  //     if (today.getDate() === currentDate.getDate()) {
+  //       currentDate.setHours(
+  //         currentDate.getHours() > 10 ? currentDate.getHours() + 1 : 10
+  //       );
+  //       currentDate.setMinutes(currentDate.getMinutes() > 60 ? 60 : 0);
+  //     } else {
+  //       currentDate.setHours(10);
+  //       currentDate.setMinutes(0);
+  //     }
+
+  //     let timeSlots = [];
+
+  //     // setDocSlots(prev => ([...prev, timeSlots]))
+
+  //     while (currentDate < endTime) {
+  //       let formattedTime = currentDate.toLocaleTimeString([], {
+  //         hour: "2-digit",
+  //         minute: "2-digit",
+  //       });
+
+  //       let day = currentDate.getDate();
+  //       let month = currentDate.getMonth() + 1;
+  //       let year = currentDate.getFullYear();
+
+  //       // const slotDate = day + "_" + month + "_" + year;
+  //       const slotDate = year + "-" + month + "-" + day;
+  //       const slotTime = formattedTime;
+
+  //       console.log("This is DocInfo",docInfo);
+
+  //       const isSlotAvailable = docInfo.slots_booked[slotDate] && docInfo.slots_booked[slotDate].includes(slotTime) ? false : true
+  //       console.log("this is isSloteAvail", isSlotAvailable);
+
+  //       if (isSlotAvailable) {
+  //         // Add slot to array
+  //         timeSlots.push({
+  //           datetime: new Date(currentDate),
+  //           time: formattedTime,
+  //         });
+  //       }
+
+  //       // Increment current time by 30 minutes
+  //       currentDate.setMinutes(currentDate.getMinutes() + 60);
+  //     }
+
+  //     setDocSlots((prev) => [...prev, timeSlots]);
+  //   }
+  // };

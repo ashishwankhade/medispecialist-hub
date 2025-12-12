@@ -1,0 +1,228 @@
+/* Main Container */
+.ranaReshadule-userReschedule {
+  background-color: white;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.ranaReshadule-userReschedule-h1 {
+  color: #1573b3;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.ranaReshadule-reschedule-userDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ranaReshadule-reschedule-grid {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.ranaReshadule-reschedule-doctor-container-above {
+  padding: 1.5rem;
+}
+
+/* Grid Items */
+.ranaReshadule-reschedule-grid-item {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ranaReshadule-reschedule-grid-item-p {
+  color: rgb(197, 135, 0);
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.ranaReshadule-reschedule-grid-item-h3 {
+  color: black;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+/* Booking Slots */
+.ranaReshadule-bookSlots-div {
+  margin-top: 2rem;
+}
+
+.ranaReshadule-Available {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.ranaReshadule-availability-p2 {
+  color: #1573b3;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.ranaReshadule-Dates-Days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.ranaReshadule-borderDayDAtes {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ranaReshadule-borderDayDAte2s {
+  background-color: #1573b3;
+  color: white;
+  border: 2px solid #1573b3;
+}
+
+.ranaReshadule-borderDayDAte3s {
+  background-color: white;
+  color: black;
+  border: 2px solid #e0e0e0;
+}
+
+.ranaReshadule-borderDayDAte3s:hover {
+  border-color: #1573b3;
+}
+
+.ranaReshadule-slotTime-div {
+  margin-top: 1.5rem;
+}
+
+.ranaReshadule-condition1 {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.ranaReshadule-condition2 {
+  background-color: #1573b3;
+  color: white;
+  border: none;
+}
+
+.ranaReshadule-condition3 {
+  background-color: #f8f8f8;
+  color: black;
+  border: 1px solid #e0e0e0;
+}
+
+.ranaReshadule-condition3:hover {
+  border-color: #1573b3;
+  color: #1573b3;
+}
+
+/* Mode Selection */
+.ranaReshadule-mode-select {
+  margin: 2rem 0;
+}
+
+.ranaReshadule-mode-select label {
+  display: block;
+  color: rgb(197, 135, 0);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.ranaReshadule-booking-mode-select {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+}
+
+.ranaReshadule-booking-mode-select:focus {
+  outline: none;
+  border-color: #1573b3;
+}
+
+/* Reschedule Button */
+.ranaReshadule-reshedule-btn {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.ranaReshadule-reshedule-btn-p {
+  background-color: #1573b3;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  min-width: 200px;
+}
+
+.ranaReshadule-reshedule-btn-p:hover {
+  background-color: #0e5a8a;
+  transform: translateY(-2px);
+}
+
+.ranaReshadule-reshedule-btn-p:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .ranaReshadule-userReschedule {
+    padding: 1rem;
+  }
+  
+  .ranaReshadule-userReschedule-h1 {
+    font-size: 1.5rem;
+  }
+  
+  .ranaReshadule-Dates-Days {
+    justify-content: center;
+  }
+  
+  .ranaReshadule-borderDayDAtes {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ranaReshadule-reschedule-doctor-container-above {
+    padding: 1rem;
+  }
+  
+  .ranaReshadule-reshedule-btn-p {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .ranaReshadule-condition1 {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
