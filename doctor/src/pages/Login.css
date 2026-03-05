@@ -1,0 +1,196 @@
+.CounsellorPage-container {
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counsellor-login-logo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border: 30px solid rgba(255, 255, 255, 0.2);
+}
+
+.CounsellorPage-wrapper {
+  /* margin-top: 90px; */
+  width: 100%;
+  max-width: 1100px;
+  min-height: 500px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;
+}
+
+.CounsellorPage-leftPanel {
+  flex: 1;
+  background: linear-gradient(45deg, #1573b3 0%, #3890ca 100%);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.CounsellorPage-illustration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.CounsellorPage-circle {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin: 0 auto 30px;
+  position: relative;
+}
+
+.CounsellorPage-circle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+}
+
+.CounsellorPage-illustration h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.CounsellorPage-illustration p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.CounsellorPage-rightPanel {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.CounsellorPage-formWrapper {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.CounsellorPage-title {
+  font-size: 32px;
+  color: #2d3748;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.CounsellorPage-formGroup {
+  margin-bottom: 25px;
+}
+
+.CounsellorPage-label {
+  display: block;
+}
+
+.CounsellorPage-labelText {
+  display: block;
+  margin-bottom: 8px;
+  color: #4a5568;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.CounsellorPage-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.CounsellorPage-input:focus {
+  outline: none;
+  border-color: #1573b3;
+}
+
+.CounsellorPage-forgotPassword {
+  display: block;
+  text-align: right;
+  color: #1573b3;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.CounsellorPage-button {
+  width: 100%;
+  padding: 14px;
+  background: #1573b3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.CounsellorPage-button:hover {
+  background: #1573b3 !important;
+}
+
+@media (max-width: 768px) {
+  .CounsellorPage-wrapper {
+    flex-direction: column;
+  }
+
+  .CounsellorPage-leftPanel {
+    padding: 40px 20px;
+  }
+
+  .CounsellorPage-rightPanel {
+    padding: 40px 20px;
+  }
+
+  .CounsellorPage-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .CounsellorPage-circle::before {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .CounsellorPage-container {
+    padding: 10px;
+  }
+
+  .CounsellorPage-wrapper {
+    border-radius: 10px;
+  }
+
+  .CounsellorPage-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}

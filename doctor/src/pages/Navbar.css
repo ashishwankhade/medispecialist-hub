@@ -1,0 +1,91 @@
+.CounsellorPage-navbar {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 12px 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.CounsellorPage-navbarContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.CounsellorPage-logoContainer {
+  flex-shrink: 0;
+}
+
+.CounsellorPage-logo {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+}
+
+.CounsellorPage-titleWrapper {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.CounsellorPage-marqueeContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.CounsellorPage-marqueeContent {
+  display: inline-block;
+  animation: CounsellorPage-marquee 20s linear infinite;
+  white-space: nowrap;
+}
+
+.CounsellorPage-companyTitle {
+  color: #1573b3;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes CounsellorPage-marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .CounsellorPage-navbar {
+    padding: 8px 16px;
+  }
+
+  .CounsellorPage-logo {
+    width: 75px;
+  }
+
+  .CounsellorPage-companyTitle {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .CounsellorPage-logo {
+    width: 60px;
+  }
+
+  .CounsellorPage-companyTitle {
+    font-size: 25px;
+  }
+}
+
+/* Optional: Pause animation on hover */
+.CounsellorPage-marqueeContainer:hover .CounsellorPage-marqueeContent {
+  animation-play-state: paused;
+}

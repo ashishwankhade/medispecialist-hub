@@ -1,0 +1,142 @@
+/* Main container for the account section */
+.account-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  margin: 0px;
+}
+
+/* Main content area */
+.account-main {
+  /* background-color: red; */
+  display: flex;
+  /* justify-content: start; */
+  flex-direction: column;
+  /* align-items: start; */
+  flex: 1;
+  padding: 0px;
+  margin: 0px;
+  /* background-color: rgba(0, 0, 0, 0.04); */
+}
+
+.account-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.account-header{
+  background-color: #1573b3;
+}
+
+.account-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(197, 135, 0);
+  padding: 20px 0px;
+}
+
+/* Main content and navigation layout */
+.account-content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  /* display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto; */
+}
+
+/* @media (min-width: 1024px) {
+  .account-content {
+    grid-template-columns: 250px 1fr;
+  }
+} */
+
+/* Navigation */
+.account-nav {
+
+  display: flex;
+  align-items: start;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* display: grid; */
+  /* gap: 12px; */
+  font-size: 1rem;
+  color: #666;
+  width: 10vw;
+}
+
+.account-link {
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s, font-weight 0.2s;
+}
+
+.account-link:hover {
+  color:#1573b3;
+}
+
+.account-link.active {
+  font-weight: bold;
+  color:#1573b3;
+}
+
+/* Body where the selected component is rendered */
+.account-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+
+@media (max-width:640px) {
+  .account-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .account-nav {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: row;
+    /* display: grid; */
+    gap: 0px;
+    font-size: 1.3rem;
+    color: #666;
+    width: 100%;
+  }
+}
+
+
+@media (max-width:540px) {
+  .account-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(116, 1, 116);
+    padding: 9px 0px;
+  }
+
+  .account-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .account-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* display: grid; */
+    /* gap: 12px; */
+    font-size: 1.3rem;
+    color: #666;
+  }
+}

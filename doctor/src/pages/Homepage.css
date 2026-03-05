@@ -1,0 +1,181 @@
+/* Existing styles */
+
+.slideBar-div {
+  font-family: sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow-y: hidden;
+}
+
+aside.bhushan {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px; /* Adjust this if needed */
+  border-right: 1px solid rgb(207, 207, 207);
+  background-color: rgb(255, 255, 255);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.logoDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.Website-Logo {
+  padding-top: 10px;
+  width: 50%;
+}
+
+.slideBar-list {
+  width: 100%;
+  margin-top: 1.25rem;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.slideBar-link {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slideBar-link:hover {
+  background-color: #f0f0f0;
+}
+
+.active-link {
+  color: black;
+  background-color: #f2f3ff;
+  border-right: 4px solid #1573b3;
+  padding: 20px 25px;
+}
+
+.uploadDoctor {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.uploadDoctorInput {
+  padding-left: 70px;
+  padding-top: 30px;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px; /* Offset the fixed sidebar */
+  height: 100vh; /* Ensure it takes up the full viewport height */
+  width: calc(100vw - 200px); /* Adjust width based on sidebar */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px; /* Optional padding for aesthetics */
+}
+
+/* image logo */
+.image-logo {
+  width: 50%;
+}
+
+.btnLogout {
+  background-color:#1573b3;
+  color: white;
+  margin-left: 10px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.btnLogout:hover {
+  background-color: rgb(149, 193, 3);
+}
+
+@media (max-width: 800px) {
+  aside.bhushan {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+    margin: 0px;
+  }
+
+  .toggle-btn {
+    display: block;
+    position: fixed;
+    top: 22px;
+    left: 20px;
+    z-index: 1100;
+    background-color: rgb(116, 1, 116);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .hiddenToggleBtn{
+    display: none;
+  }
+
+  .content-area {
+    margin-left: 0;
+    width: 100vw; /* Full width when sidebar is hidden */
+  }
+
+  aside.bhushan.open {
+    width: 200px;
+  }
+
+  .content-area {
+    padding: 0px; /* Optional padding for aesthetics */
+  }
+}
+
+
+@media (max-width:530px) {
+  .toggle-btn {
+    display: block;
+    top: 18px;
+    left: 20px;
+    z-index: 1100;
+    background-color: rgb(116, 1, 116);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width:400px) {
+  .toggle-btn {
+    display: block;
+    top: 18px;
+    left: 10px;
+    z-index: 1100;
+    background-color: rgb(116, 1, 116);
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,125 @@
+/* UpdateAppointments.css */
+
+/* General reset and base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  .diagnosysFormDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f9fafb;
+  }
+  
+  .logoDiv {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .logoDiv img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .DiagnosisFormDiv {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 700px;
+    width: 100%;
+  }
+  
+  .DiagnosisForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .formBody {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .FormBodyDiv1 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .FormBodyDiv11 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .FormBodyDiv11-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .FormBodyDiv11-returnButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .FormBodyDiv11-returnButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .appointmentStatus {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  .appointmentStatus p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .appointmentStatus p span {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .DiagnosisFormDiv {
+      padding: 15px;
+    }
+  
+    .FormBodyDiv11-header {
+      font-size: 20px;
+    }
+  
+    .FormBodyDiv11-returnButton {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  
+    .appointmentStatus p {
+      font-size: 14px;
+    }
+  }
+  
