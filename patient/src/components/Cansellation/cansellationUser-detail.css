@@ -1,0 +1,70 @@
+.userCancellation {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.userCancellation-h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cancel-userDetail {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.cancel-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.cancel-table th,
+.cancel-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.cancel-table th {
+  background-color: #1573b3;
+  /* background-color: #f4f4f4; */
+  font-weight: bold;
+}
+
+.cancel-table td {
+  font-size: 1rem;
+}
+
+.cancel-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.cancel-btn {
+  padding: 8px 16px;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background-color: #d9363e;
+}
+
+.cancel-btn:focus {
+  outline: none;
+}
+
+
+.userCancellation-h1{
+  margin-top: 30px;
+  color: rgb(116, 1, 116);
+}
+
+.table-heading{
+  background-color: rgb(149, 193, 3);
+}

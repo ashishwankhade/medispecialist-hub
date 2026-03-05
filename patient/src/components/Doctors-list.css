@@ -1,0 +1,151 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.header h1 {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(71, 71, 71);
+  margin: 0;
+}
+
+/* Page title */
+.page-title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.8rem;
+  color: #474747;
+  font-weight: bold;
+}
+
+/* Doctors list styles */
+.doctors-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Doctor card styles */
+.doctor-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.doctor-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid #1573b3;
+}
+
+.doctor-info {
+  padding: 20px;
+}
+
+.doctor-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.doctor-specialisation {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.doctor-experience {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Action buttons */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.view-profile-btn,
+.book-appointment-btn {
+  padding: 10px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-profile-btn {
+  background-color: #1573b3;
+  color: white;
+}
+
+.view-profile-btn:hover {
+  background-color: #105a8c;
+  transform: scale(1.03);
+}
+
+.book-appointment-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.book-appointment-btn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.book-appointment-btn:hover:not(:disabled) {
+  background-color: #218838;
+  transform: scale(1.03);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .doctors-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}

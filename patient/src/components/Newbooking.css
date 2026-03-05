@@ -1,0 +1,116 @@
+/* Appointment.css */
+
+
+:root {
+    --primary-color: #3498db; /* Example color */
+}
+.appointment-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.doctor-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.doctor-image {
+    background-color: var(--primary-color);
+    width: 100%;
+    max-width: 288px;
+    border-radius: 8px;
+}
+
+.doctor-info {
+    flex: 1;
+    border: 1px solid #ADADAD;
+    border-radius: 8px;
+    padding: 32px;
+    background-color: white;
+    margin-top: -80px;
+}
+
+.doctor-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #4A4A4A;
+}
+
+.doctor-degree {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+    color: #6C6C6C;
+}
+
+.doctor-about {
+    font-size: 14px;
+    color: #6C6C6C;
+    margin-top: 8px;
+}
+
+.appointment-fee {
+    font-weight: 500;
+    color: #4A4A4A;
+    margin-top: 16px;
+}
+
+.booking-slots {
+    margin-left: 288px;
+    padding-left: 16px;
+    font-weight: 500;
+    color: #565656;
+    margin-top: 32px;
+}
+
+.slot-options {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    margin-top: 16px;
+}
+
+.slot-item {
+    text-align: center;
+    padding: 24px;
+    min-width: 64px;
+    border-radius: 9999px;
+    cursor: pointer;
+    border: 1px solid #DDDDDD;
+}
+
+.slot-item.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.slot-time {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 8px 20px;
+    border-radius: 9999px;
+    cursor: pointer;
+    border: 1px solid #B4B4B4;
+}
+
+.slot-time.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.book-button {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 12px 80px;
+    border-radius: 9999px;
+    margin-top: 24px;
+    cursor: pointer;
+}

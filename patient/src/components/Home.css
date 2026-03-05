@@ -1,0 +1,240 @@
+/* Base styles and variables */
+:root {
+  --primary-color: #1573b3;
+  --secondary-color: #aecdE8;
+  --accent-color: #c58700;
+  --text-light: #ffffff;
+  --text-dark: #0f0f7c;
+  --transition: all 0.3s ease;
+}
+
+/* Container */
+.hospital-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.RanaHospitalNav{
+  background-color: rgb(174, 205, 232);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  opacity: 5;
+  z-index: 5;
+  padding: 0.5rem 2rem;
+  box-shadow: 0px 4px 10px 0px rgb(91, 91, 91);
+}
+
+.RanaHospital-logo{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.RanaHospital-h1{
+  width: 100%;
+  text-align: center;
+  padding-right: 80px;
+  font-size: 3.0rem;
+  font-weight: 600;
+  color: rgb(15, 15, 124);
+  opacity: 5;
+  z-index: 1;
+ 
+}
+
+.RanaHospital-logo:hover {
+  transform: scale(1.05);
+}
+
+.hospital-title {
+  color: var(--text-dark);
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Main Content */
+.hospital-main {
+  flex: 1;
+  position: relative;
+}
+
+.hero-section {
+  position: relative;
+  height: 100%;
+  background-image: url('./image/Img2.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.hero-content {
+  position: relative;
+  width: min(400px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  /* background: rgba(255, 255, 255, 0.9); */
+  border-radius: 1rem;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+}
+
+/* Button Styles */
+.booking-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 600;
+  color: var(--text-light);
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+  animation: pulse 2s infinite;
+}
+
+.booking-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(197, 135, 0, 0.3);
+}
+
+.button-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Footer Styles */
+.hospital-footer {
+  background-color: var(--primary-color);
+  padding: 2rem 1rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.specialties {
+  color: var(--text-light);
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.footer-title {
+  color: #ffeb3b;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 600;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+  .RanaHospitalNav {
+    flex-direction: column;
+    padding: 1rem
+  }
+
+  .RanaHospital-logo {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .RanaHospital-h1 {
+    font-size: 3.5rem;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-section {
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .specialties {
+    font-size: 1rem;
+  }
+
+  .RanaHospitalNav {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .RanaHospital-logo {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .RanaHospital-h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-button {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .RanaHospitalNav {
+    padding: 0.5rem;
+  }
+
+  .RanaHospital-logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .RanaHospital-h1 {
+    font-size: 2.5rem;
+  }
+}

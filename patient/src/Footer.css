@@ -1,0 +1,131 @@
+.footer {
+  background-color: rgb(54, 29, 54);
+  /* background-color: rgb(36, 36, 36); */
+  height: 25vh;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* color: rgb(149, 193, 3); */
+
+.footer_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  width: 60%;
+}
+
+.footerlogo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(116, 1, 116);
+}
+
+.footer_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  width: 60%;
+}
+
+.footer_navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5 px;
+  gap: 50px;
+  width: 60%;
+}
+
+@media (max-width: 450px) {
+  .footer {
+    background-color: rgb(54, 29, 54);
+    /* background-color: rgb(36, 36, 36); */
+    height: 30vh;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    gap: 50px;
+    width: 60%;
+  }
+
+  .CopyRight {
+    color: rgb(172, 191, 208);
+    /* color: rgb(119, 119, 119); */
+    padding-bottom: 30px;
+  }
+
+  .footer_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    width: 60%;
+  }
+
+  .footerlogo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(116, 1, 116);
+  }
+}
+
+.footer-li {
+  text-decoration: none;
+  /* color: white; */
+  color: rgb(149, 193, 3);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.footer-li:hover {
+  cursor: pointer;
+}
+
+.footerlogo:hover {
+  cursor: pointer;
+}
+
+#footer-p {
+  color: rgba(195, 255, 0, 0.153);
+}
+
+.CopyRight {
+  color: rgb(172, 191, 208);
+  /* color: rgb(119, 119, 119); */
+}
+.heart {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: red;
+}
