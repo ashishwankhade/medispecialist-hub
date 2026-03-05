@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.Admin-DashboardAPP {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.Admin-Dashboard-left{
+  width: 100%;
+}
+
+.Admin-Dashboard-right{
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .Admin-Dashboard-left{
+    width: 100%;
+  }
+  
+  .Admin-Dashboard-right{
+    width: 100%;
+  } 
+}
+
+
+@media (max-width: 900px) {
+    .Admin-Dashboard-left{
+      width: 100%;
+    }
+    
+    .Admin-Dashboard-right{
+      width: 100%;
+    } 
+}

@@ -1,0 +1,221 @@
+.viewSingleAppointment {
+  position: relative;
+}
+
+.viewSingleAppointmentLogo {
+  position: absolute;
+  width: 6%;
+  top: 10px;
+  left: 28px;
+}
+
+.viewSingleAppointment-title {
+  text-align: center;
+  color: white;
+  background-color: #1573b3;
+  padding: 40px 10px;
+  margin-left: 15px;
+}
+
+.viewSingleAppointment-form-container {
+  max-width: 60%;
+  margin: auto;
+  margin-bottom: 70px;
+  padding: 40px 20px;
+  background-color: white;
+  color: black;
+  /* border: 2px solid rgb(149,193,3); */
+  border-radius: 5px;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.viewSingleAppointment-details-form {
+  display: grid;
+  gap: 30px;
+  padding-right: 20px;
+}
+
+.viewSingleAppointment-form-row {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewSingleAppointment-form-row-textArea {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewSingleAppointment-form-field label {
+  font-weight: bold;
+  color: black;
+}
+
+.viewSingleAppointment-form-field input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #1573b3;
+  border-radius: 5px;
+  background-color: rgb(245, 245, 245);
+  color: black;
+  margin-top: 8px;
+}
+
+.viewCounsellorTextArea {
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.viewSingleAppointment-form-field input[readonly] {
+  background-color: rgb(240, 240, 240);
+  color: black;
+}
+
+.viewSingleAppointmentTextArea{
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+}
+
+.viewSingleAppointment-form-field textarea {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #1573b3;
+  border-radius: 5px;
+  background-color: rgb(245, 245, 245);
+  color: black;
+  resize: none;
+}
+
+.viewSingleAppointment-textArea-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Full-width for single-column rows */
+  gap: 15px;
+}
+
+.viewSingleAppointment-returnToDashBoard {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.returnToDashBoard {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  color: black;
+  background-color: rgb(197, 135, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.returnToDashBoard:hover {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  color: black;
+  background-color: #1573b3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .viewSingleAppointment-form-row {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .viewSingleAppointment-form-container {
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 70px;
+    padding: 40px 20px;
+    background-color: white;
+    color: black;
+    /* border: 2px solid rgb(149,193,3); */
+    border-radius: 5px;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
+  }
+}
+
+@media (max-width: 686px) {
+  .viewSingleAppointment-form-container {
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 70px;
+    padding: 40px 20px;
+    background-color: white;
+    color: black;
+    /* border: 2px solid rgb(149,193,3); */
+    border-radius: 5px;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
+  }
+
+  .viewSingleAppointment-form-row {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .viewSingleAppointment-returnToDashBoard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .viewSingleAppointment-title {
+    text-align: center;
+    color: rgb(149, 193, 3);
+    background-color: rgb(116, 1, 116);
+    padding: 40px 10px;
+    margin-left: 15px;
+    font-size: 1.4rem;
+  }
+}
+
+.decorationNone {
+  display: inline-block; /* Allows setting width and height */
+  padding: 10px 20px; /* Adds space around the text */
+  /* background-color: #007bff; Button background color */
+  /* color: white;          Button text color */
+  text-align: center; /* Centers the text */
+  text-decoration: none; /* Removes underline */
+  border: none; /* Removes default border */
+  border-radius: 5px; /* Rounds the corners */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Adds transition for hover effect */
+  text-decoration: none;
+  /* color: red; */
+}
+
+.testReportPdfDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}

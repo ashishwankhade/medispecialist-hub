@@ -1,0 +1,222 @@
+/* AddDoctor.css */
+.addDoctor-form {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.addDoctor-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.addDoctor-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.addDoctor-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.addDoctor-error {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.addDoctor-imageUpload {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.addDoctor-imageLabel {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f3f4f6;
+}
+
+.addDoctor-imagePreview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.addDoctor-imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+}
+
+.addDoctor-uploadIcon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 8px;
+}
+
+.addDoctor-imageInput {
+  display: none;
+}
+
+.addDoctor-formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.addDoctor-formField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.addDoctor-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.addDoctor-input,
+.addDoctor-select,
+.addDoctor-textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.addDoctor-input:focus,
+.addDoctor-select:focus,
+.addDoctor-textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.addDoctor-select {
+  background-color: white;
+}
+
+.addDoctor-textareaField {
+  grid-column: 1 / -1;
+}
+
+.addDoctor-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.addDoctor-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.addDoctor-button:hover {
+  background-color: #1d4ed8;
+}
+
+.addDoctor-button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .addDoctor-container {
+    padding: 20px;
+  }
+  
+  .addDoctor-formGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .addDoctor-input,
+  .addDoctor-select,
+  .addDoctor-textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+  }
+}
+
+
+
+/* Custom dialog box CSS */
+
+.custom-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.custom-dialog-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+.custom-dialog-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.custom-dialog-message {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.custom-dialog-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-dialog-button:hover {
+  background-color: #0056b3;
+}

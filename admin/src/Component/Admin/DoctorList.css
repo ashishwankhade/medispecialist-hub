@@ -1,0 +1,170 @@
+/* General Styles */
+.counsellorsListDiv {
+  width: 98%;
+  padding: 0 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.counsellors-h1 {
+  text-align: center;
+  color: black;
+  /* background-color: #1573b3; */
+  padding: 25px 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0.4rem 0;
+}
+
+/* Grid Layout */
+.counsellorsDiv-Body {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+/* Card Layout */
+.counsellorCard {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px rgba(108, 108, 108, 0.8);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.counsellorImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.counsellor-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.counsellorDetails {
+  flex: 2;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.counsellorName {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
+  color: black;
+}
+
+.counsellorEmail,
+.counsellorMobile,
+.counsellorSpecialisation,
+.counsellorExperience {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Button Group */
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.viewDetailButton,
+.updateProfileButton {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.viewDetailButton {
+  background-color: rgb(197, 135, 0);
+}
+
+.updateProfileButton {
+  background-color: #1573b3;
+}
+
+.viewDetailButton:hover,
+.updateProfileButton:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .counsellorCard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .counsellorImage {
+    padding: 1rem;
+  }
+
+  .counsellor-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .counsellorDetails {
+    padding: 0.8rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .counsellorCard {
+    flex-direction: column;
+  }
+
+  .counsellorImage {
+    padding: 0.5rem;
+  }
+
+  .counsellor-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .counsellors-h1 {
+    font-size: 1.6rem;
+    padding: 1.5rem 0;
+  }
+
+  .counsellorName {
+    font-size: 1.4rem;
+  }
+
+  .counsellorDetails {
+    text-align: center;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
